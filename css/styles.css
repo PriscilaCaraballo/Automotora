@@ -1,0 +1,310 @@
+/* Mi código CSS */
+
+body {
+  padding-top: 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+/*****************************************************************
+
+    HEADER
+
+/*****************************************************************/
+
+#header {
+  background-color: #222;
+  border-bottom: 4px solid #ff8f00;
+}
+
+#header-logo {
+  width: auto;
+  height: 20px;
+}
+
+/*****************************************************************
+
+    HOME
+
+/*****************************************************************/
+
+#home {
+  flex: 1;
+}
+
+#home-intro {
+  border-bottom: 4px solid #ff8f00;
+  height: 36vw;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+.carousel-caption h5 {
+  color: #ddd;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#home h1 span {
+  font-weight: 300;
+}
+
+#home .card h4 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+#home hr {
+  margin: 1.9rem 0 2.5rem;
+}
+
+@media (max-width: 767px) {
+  #home-intro {
+    height: 30vh;
+  }
+  #home h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/*****************************************************************
+
+    FOOTER
+
+/*****************************************************************/
+
+#footer {
+  border-top: 4px solid #ff8f00;
+  background-color: #222;
+  margin-top: 40px;
+  color: #eeeeee;
+  padding: 80px 0;
+  font-size: 1rem;
+}
+
+#footer-logo {
+  width: auto;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+#footer ul li a,
+#footer ul li a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+/*****************************************************************
+  VENTAS
+/*****************************************************************/
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filtro {
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.filtro legend {
+  border-bottom: 1px solid #ddd;
+}
+
+.filtro label {
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-primary {
+  background-color: #ff8f00;
+  border: none;
+  width: 100%;
+}
+
+.img-card-container {
+  height: 210px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  line-height: 0;
+  margin-top: 20px;
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.img-badge {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.title-img {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.data-card {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.data-card i {
+  font-size: 0.875rem;
+}
+
+/*****************************************************************
+  SOBRE NOSOTROS
+/*****************************************************************/
+.about-img {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  line-height: 0;
+  margin-top: 20px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.img-about {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.about-text {
+  padding-left: 40px;
+}
+
+.btn-light {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.nuestro-equipo {
+  margin-top: 2rem;
+}
+
+.out-title {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nuestro-equipo {
+  margin-top: 60px;
+}
+
+.equipo-card {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.equipo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.equipo-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.equipo-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-top: 10px;
+}
+
+.equipo-rol {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.equipo-redes {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.equipo-redes a {
+  color: #183fee;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.equipo-redes a:hover {
+  color: #ff8f00;
+}
+
+@media (max-width: 768px) {
+  .equipo-card {
+    margin-bottom: 30px;
+  }
+}
