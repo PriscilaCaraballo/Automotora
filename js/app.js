@@ -67,6 +67,7 @@ buttonFiltrar.addEventListener("click", () => {
     })
     .then(function (arrayAutos) {
       if (arrayAutos.length == 0) {
+        contenedorCard.innerHTML = "";
         contenedorCard.insertAdjacentHTML(
           "afterbegin",
           `<div class="alert alert-danger" role="alert">
@@ -89,7 +90,7 @@ function cargarAutos(arrayAutos) {
     // <span class="badge rounded-pill text-bg-warning">Nuevo</span>
     let nuevo = "";
     if (auto.status === 1) {
-      nuevo = '<span class="badge rounded-pill text-bg-warning">Nuevo</span>';
+      nuevo = '<span class="badge rounded-pill">Nuevo</span>';
     }
 
     let starAdd = "";
@@ -132,10 +133,10 @@ function cargarAutos(arrayAutos) {
               </div>
               <div class="col-12 col-md-8 card-body">
                 <div class="row">
-                  <div class="col-12 col-md-7">
+                  <div class="col-12 col-md-6">
                     <h3 class="card-title title-img">${auto.brand} ${auto.model}</h3>
                   </div>
-                  <div class="col-12 col-md-5 text-end">
+                  <div class="col-12 col-md-6 text-end">
                     <p class="card-text data-card">${auto.year} | USD ${precioAdd} | ${starAdd}</p>
                   </div>
                 </div>
